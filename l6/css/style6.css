@@ -1,0 +1,483 @@
+
+/*шрифт*/
+/*@font-face {
+	font-family: 'Helvetica Neue Regular';
+	src: url('../fonts/helveticaneue-thin-webfont.eot');
+	src: url('../fonts/helveticaneue-thin-webfont.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/helveticaneue-thin-webfont.woff2') format('woff2'),
+	url('../fonts/helveticaneue-thin-webfont.woff') format('woff'),
+	url('../fonts/helveticaneue-thin-webfont.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+	}*/
+
+	body{
+		/*		background: #bfbfbf;*/
+		width: 910px;
+		padding: 15px 45px 0 45px;
+		margin: 0 auto;
+		font-family: sans-serif;
+	}
+
+	/*верхнее меню*/
+	header{
+		height: 50px;
+		background: white;
+		color: white;
+	}
+	.header{
+		float: left;
+	}
+	.header--phone{
+		width: 280px;
+		height: 22px;
+		margin: 14px 10px;
+		overflow: hidden;
+	}
+	.phone{
+		line-height: 22px;
+		color: grey;
+		margin-left: 5px;
+		font-size: 18px;
+	}
+	.login{
+		width: 495px;
+		height: 30px;
+		margin: 10px 15px 10px 15px;
+		background: navy;
+		border-radius: 5px;
+		font-size: 12px;
+	}
+	input{
+		margin: 5px 5px 5px 0;
+	}
+	.input{
+		font-size: 12px;
+		color: white;
+		background: navy;
+		border: none;
+		padding:2px;
+	}
+
+	.header--img{
+		margin: -3px 5px;
+	}
+	.login--registration{
+		color: white;
+		text-decoration: none;
+		margin: 5px;
+	}
+	.header--login{
+		margin: 9px 2px;
+	}
+	.login--login{
+		color: pink;
+	}
+	.navigation {
+		float: right;
+		width: 75px;
+		height: 20px;
+		margin: 14px 3px;
+		background: white;
+		border-radius: 10px;
+		border: 1px solid grey;
+	}
+	.navigation img{
+		height: 10px;
+		margin: 5px 4px 0 5px;
+	}
+	/*центральное фото */
+	.image img{
+		width: 100%;
+	}
+
+	/*главное меню*/
+	.menu{
+		background: black;
+		height: 25px;
+		padding: 5px 0 5px 120px;
+		border-radius: 5px;
+		color: #b1bcc0;
+	}
+	.menu a{
+		display: block;
+		float: left;
+		color: #b1bcc0;
+		padding: 5px 5px;
+		margin: 0 5px;
+		border-radius: 10px;
+		text-decoration: none;
+	}
+	.menu a:hover{
+		color: white;
+		background: #195779;
+	}
+	.backet {
+		float: left;
+		font-size: 12px;
+		line-height: 24px;
+		color: white;
+	}
+	.backet img{
+		float: left;
+		margin: 3px 5px 0 60px;
+	}
+	.backet p{
+		float: left;
+	}
+	.backet__goods--calculat{
+		margin-left:2px; 
+		color: #104e79
+	}
+	.backet__sum{
+		margin-left: 16px;
+	}
+	.backet__sum--calculat{
+		margin-left: 10px;
+		color: #104e79;
+	}
+
+	/*секция подбора */
+	.select{
+		width: 910px;
+		height: 135px;
+		padding:10px 0;
+	}
+
+	/*	подбор слева*/
+	.avto,.tyre,.disk{
+		float: left;
+		width: 415px;
+		height: 135px;
+		background: white;
+		border-radius: 15px;
+		border:1px solid grey;
+		box-shadow: 2px 2px 5px grey;
+		color: #213a4d;
+	}
+	.letter1 {
+		font-size: 14px;
+		font-weight: bold;
+		margin: 1px 45px;
+	}
+	.letter2 {
+		font-size: 11px;
+		font-weight: bold;
+		margin: 1px 20px;
+	}
+
+	.avto__top p{
+		display: inline-block;
+		/*		background: pink*/
+	}
+	.avto .select11 {
+		float: left;
+		width: 17%;
+		/*		background: yellow;*/
+		margin:5px 5px 5px 20px;
+	}
+
+	.letter3{
+		float: left;
+		font-size: 10px;
+		line-height: 10px;
+		margin: 3px 0;
+	} 
+	.letter4{
+		float: right;
+	}
+	.avto .select12{
+		float: left;
+		width: 24%;
+		/*		background: pink;*/
+		margin: 5px 2px;
+	}
+
+	.select12--1,.select12--2,.select12--3,.select12--4{
+		display: inline-block;
+		margin:0 0 4px 0;
+		font-size: 5px;
+	}
+
+	.find{
+		font-style: italic;
+		float: right;
+		margin-right: 20px;
+		font-size: 14px;
+	}
+
+
+	/*	подбор по центру*/
+	.tyre{
+		float: left;
+		width: 190px;
+		margin-left: 15px;
+	}
+	.tyre__top p{
+		display: inline-block;
+		/*	background: pink;*/
+	}
+	.tyre__top .letter1{
+		margin: 1px 10px;
+	}
+	.tyre .select21 {
+		float: left;
+		width: 18%;
+		/*		background: yellow;*/
+		margin:4px 5px 5px 10px;
+	}
+	.tyre .select22{
+		float: left;
+		/*		background: pink;*/
+		width: 33%;
+		margin: 5px 2px;
+	}
+	.tyre .select22--1{
+		margin: 0 0 4px 0;
+	}
+	.tyre .letter3{
+		margin: 6px 0;
+	}
+	.tyre .select22--2 p{
+		font-size: 12px;
+		font-weight: bold;
+		line-height: 14px;
+		margin-top: 8px;
+	}
+	.tyre input[type="checkbox" i] {
+		margin: -2px 3px 3px 1px;
+	}
+	.slash{
+		float: right;
+		margin-top: -20px;
+	}
+
+	.tyre .select23{
+		float: left;
+		/*		background: pink;*/
+		width: 30%;
+		margin: 5px 2px;
+	}
+
+	.tyre .find{
+		margin-top:68px;
+	}
+
+	/*подбор справа*/
+	.disk{
+		float: right;
+		width: 270px;
+	}
+	.disk__top p{
+		display: inline-block;
+		/*		background: pink;*/
+	}
+	.disk__top .letter1{
+		margin: 1px 10px;
+	}
+	.disk .select31 {
+		float: left;
+		width: 28%;
+		/*		background: yellow;*/
+		margin:4px 5px 5px 10px;
+	}
+	.disk .select32{
+		float: left;
+		/*		background: pink;*/
+		width: 27%;
+		margin: 5px 2px;
+	}
+	.disk .select32--1,.select32--2, .select32--3{
+		margin: 0 0 10px 0;
+	}
+	.disk .select33{
+		float: left;
+		padding-left: 20px;
+		/*		background: pink;*/
+		width: 25%;
+		margin: -15px 0px;
+		border-left: 1px solid grey; 
+
+	}
+	.disk .find{
+		margin-top:18px;
+	}
+
+	/*левый блок*/
+	aside{
+		width: 180px;
+		height: 630px;
+		background:white;
+	}
+	.left{
+		float: left;
+	}
+	.icon_book{
+		height: 20px;
+		vertical-align: middle;
+	}
+	.icon_circle{
+		height: 20px;
+		vertical-align: middle;
+	}
+	.left>ul>li {
+		width: 135px;
+		background: white;
+		border: 1px solid grey;
+		border-radius: 25px;
+		font-size: 13px;
+		color: #213a4d;
+		font-weight: bold;
+		padding: 2px 3px;
+		margin: 5px 0;
+	}
+	.left .left_name {
+		width: 96%;
+		box-shadow: 2px 2px 5px grey;
+		margin-bottom: 15px;
+	}
+	.left_1234 {
+		line-height: 23px;
+		padding-left: 45px;
+		font-size:13px;
+		color: grey;
+	}
+	.left_1234 li:hover{
+		font-size: 14px;
+		color: #213a4d;
+		font-weight: bold;
+		font-style: italic;
+		text-decoration: underline;
+	}
+
+
+	/*правый блок*/
+	.right{
+		float: right;
+	}
+	.right .left_name {
+		width: 170px;
+		box-shadow: 2px 2px 5px grey;
+		margin-bottom: 15px;
+		margin-left: 0px;
+	}
+	.right>ul>li {
+		width: 120px;
+		background: white;
+		border: 1px solid grey;
+		border-radius: 25px;
+		font-size: 13px;
+		color: #213a4d;
+		font-weight: bold;
+		padding: 2px 3px;
+		margin: 8px 15px;
+	}
+	.checkbox__right{
+		margin-left: 25px;
+	}
+	.shoose{
+		float: left;
+		width: 80px;
+		height: 23px;
+		margin: 35px 20px;
+		color: white;
+		font-size: 11px;
+		background: #1b5a7b;
+		border-radius: 10px;
+		border: none;
+	}
+	/*центральный блок*/
+	.center {
+		width: 525px;
+		height: 630px;
+		border-radius: 5px;
+		background: #c8d1d5;
+		margin: 0 auto;
+	}
+	.center__inblock{
+		float: left;
+		background: #c8d1d5;
+		background:# ;
+		height: 190px;
+		width: 135px;
+		margin-top: 15px;
+		margin-left: 30px;
+	}
+	.center__image{
+		background: white;
+		height: 129px;
+		width: 135px;
+		border-radius: 10px;
+		margin: 3px 0;
+		padding-top: 1px;
+		border: 1px solid grey;
+	}
+	.center__image img{
+		display: block;
+		margin: 5px 30px;
+	}
+	.center__text1{
+		text-align: center;
+		color: #206988;
+		font-weight: bold;
+	}
+	.center__text2{
+		text-align: center;
+		color: black;
+		font-size: 13px;
+	}
+	.center__text3{
+		text-align: center;
+		color: #114165;
+		font-style: italic;
+		font-weight: bold;
+	}
+
+	/*бренды*/
+	.brands{
+		padding: 45px 95px 20px;
+		height: 28px;
+		background: white;
+
+	}
+	.brands img{
+		display:block;
+		float: left;
+		width: 70px;
+		margin-left: 20px;
+	}
+
+	/*футер*/
+	footer{
+		height: 85px;
+		padding-top: 15px;
+		background: #213a4d;
+		color: white;
+	}
+	.footer{
+		float: left;
+		text-decoration: none;
+		color: grey;
+		font-size: 12px;
+		margin: 0 13px;
+		box-sizing: border-box;
+	}
+	.footer--border{
+		float: left;
+		border-left: 1px solid grey;
+	}
+	.footer__text1{
+		background: #213a4d;
+		width: 320px;
+		margin:0 auto;
+		overflow: hidden;
+	}
+	.footer__text1 a:hover{
+		color:#52abcb;
+	}
+	.footer__text2{
+		width: 160px;
+		font-size: 10px;
+		margin: 15px auto;
+		color: #724542;
+	}
