@@ -1,0 +1,147 @@
+/**** LOGO ****/
+.logo {
+  width: 29%;
+  float: left;
+  margin-left: -3px;
+  font-size: 48px;
+  font-family: 'LeagueGothic';
+  position: relative;
+  text-decoration: none;
+  color: white;
+  text-shadow: 1px 2px 3px rgba(51,51,51,0.3);
+  letter-spacing: -0.4px;
+}
+.logo span {
+  color: #62446F;
+}
+/**** END LOGO ****/
+/**** NAVIGATION ****/
+.menu {
+  width: 71%;
+  float: right;
+  position: relative;
+  font-family: 'LeagueGothic';
+  margin-top: 11px;
+}
+.menu__item {
+  font-size: 24px;
+  list-style: none;
+  text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.4);
+  display: inline-block;
+  padding-left: 38.5px;
+}
+.menu__link {
+  color: #fff;
+  text-decoration: none;
+  padding: 2px 7px 0px 4px;
+}
+.menu__link__dolor {
+  color: #fff;
+  text-decoration: none;
+  padding: 2px 0px 0px 3px;
+}
+.menu__link__dolor:hover,
+.menu__link:hover {
+  border-bottom: 2px solid #edbfff;
+}
+.active:focus,
+.menu__link__dolor:focus,
+.menu__link:focus {
+  border-bottom: 2px solid #edbfff;
+}
+/**** END NAVIGATION ****/
+/**** SLIDER ****/
+.slider {
+  position: relative;
+  margin-top: 159px;
+  background-color: rgba(0, 0, 0, 0.2);
+  width: 100%;
+  height: 400px;
+  z-index: 1;
+}
+.arrows__left {
+  background-image: url('../../img/arrows.png');
+  width: 31px;
+  height: 43px;
+  margin-top: 182px;
+  float: left;
+}
+.arrows__right {
+  background-image: url('../../img/arrows.png');
+  background-position: -31px 0px;
+  width: 31px;
+  height: 43px;
+  z-index: 120;
+  margin-top: 182px;
+  float: right;
+}
+.slider__text {
+  position: relative;
+  margin-top: 78px;
+  letter-spacing: -0.5px;
+  width: 51%;
+  font-family: 'LeagueGothic';
+  float: left;
+  color: #fff;
+  z-index: 2;
+  text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+  margin-left: -2px;
+}
+.text__head {
+  font-size: 60px;
+  line-height: 1;
+  margin-bottom: -4px;
+}
+.text__description {
+  font-size: 32px;
+  color: #edbfff;
+  height: 39px;
+  overflow: hidden;
+}
+.text__item {
+  font-family: 'OpenSansLight';
+  font-size: 18px;
+}
+.iphone {
+  width: 28%;
+  position: relative;
+  margin-top: -17px;
+  float: left;
+  z-index: 2;
+  margin-left: 127px;
+}
+.iphone [src="img/iphone-big.png"] {
+  width: 102%;
+}
+.play {
+  position: absolute;
+  top: 150px;
+  left: 51%;
+}
+.slider__buttons {
+  float: right;
+  overflow: hidden;
+  margin-top: 74px;
+  /*width: 33%;*/
+  margin-right: 161px;
+}
+
+.slider__buttons li {
+  float: left;
+  list-style: none;
+  margin-right: 8px;
+}
+
+.slider__buttons a {
+  display: block;
+  width: 14px;
+  height: 14px;
+  background: url(../../img/slider-button.png) 0px 0px no-repeat;
+}
+.slider__buttons a:hover {
+  background: url(../../img/slider-button.png) 0px -14px no-repeat;
+}
+.slider__buttons a:focus {
+  background: url(../../img/slider-button.png) 0px -14px no-repeat;
+}
+/**** END SLIDER ****/

@@ -1,0 +1,43 @@
+.menu480 {
+  display: none;
+}
+img[src="img/iphone4.png"] {
+  display: none;
+}
+.news__boxing {
+  display: none;
+}
+img[src="img/iphone-small.png"] {
+  display: none;
+}
+.text__item768 {
+  display: none;
+}
+.slider {
+  background: url('../img/overlay.png');
+}
+.read__more {
+  float: right;
+  position: relative;
+  margin: 26px 18px 67px 0px;
+}
+.read__more a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+.read__more a:focus, .read__more a:hover {
+  color: #b5b5b5;
+}
+.footer {
+  margin-top: -30px;
+}
+.menu__link__dolor:hover,
+.menu__link:hover {
+  color: white;
+}
+.active:focus,
+.menu__link__dolor:focus,
+.menu__link:focus {
+  color: white;
+}

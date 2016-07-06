@@ -1,0 +1,67 @@
+@import url("block/header.css");
+@import url("block/main.css");
+@import url("block/footer.css");
+@import url("media-query.css");
+@font-face {
+    font-family: 'LeagueGothic';
+    src: url('../fonts/leaguegothic-regular-webfont.eot');
+    src: url('../fonts/leaguegothic-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/leaguegothic-regular-webfont.woff2') format('woff2'),
+         url('../fonts/leaguegothic-regular-webfont.woff') format('woff'),
+         url('../fonts/leaguegothic-regular-webfont.ttf') format('truetype'),
+         url('../fonts/leaguegothic-regular-webfont.svg#league_gothicregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'OpenSansLight';
+    src: url('../fonts/opensanslight-webfont.eot');
+    src: url('../fonts/opensanslight-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/opensanslight-webfont.woff2') format('woff2'),
+         url('../fonts/opensanslight-webfont.woff') format('woff'),
+         url('../fonts/opensanslight-webfont.ttf') format('truetype'),
+         url('../fonts/opensanslight-webfont.svg#open_sans_lightregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'OpenSansExtraBold';
+    src: url('../fonts/opensansextrabold-webfont.eot');
+    src: url('../fonts/opensansextrabold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/opensansextrabold-webfont.woff2') format('woff2'),
+         url('../fonts/opensansextrabold-webfont.woff') format('woff'),
+         url('../fonts/opensansextrabold-webfont.ttf') format('truetype'),
+         url('../fonts/opensansextrabold-webfont.svg#open_sans_extraboldregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+body {
+  background: #f9f9f9;
+}
+*{
+	margin: 0;
+	padding: 0;
+}
+.clearfix:after {
+ 	content:'';
+ 	clear: both;
+ 	display: block;
+}
+/****  HEADER  ****/
+.header {
+	background: url(../img/bg/header-bg.jpg) top center no-repeat;
+  padding: 61px 0px 168px 0px;
+  background-size: cover;
+}
+/**** END HEADER  ****/
+/****  MAIN  ****/
+/****  END MAIN  ****/
+/****  END FOOTER  ****/
+.footer {
+  background: #fff url("../img/footer.png") top center no-repeat;
+  background-size: cover;
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+}
+/****  END FOOTER  ****/
