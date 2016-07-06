@@ -1,0 +1,64 @@
+.main {
+    width: 600px;
+    margin: 20px auto;
+}
+
+.wrapper .active {
+    color: #01839a;
+    border-bottom: 1px solid #fff;
+    background: #fff;
+}
+
+.tab {
+    cursor: pointer;
+    border: 1px solid #ddd;
+    border-radius: 3px 3px 0 0;
+    display: inline-block;
+    padding: 5px;
+    margin-bottom: -1px;
+    position: relative;
+    z-index: 2;
+    background: #eee;
+}
+
+.tab_item {
+    padding: 0 15px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+}
+
+
+form {
+    box-sizing: border-box;
+    width: 600px;
+    margin: auto;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+}
+
+form label {
+    display: table-row;
+}
+
+form span {
+    display: table-cell;
+}
+
+form input {
+    display: table-cell;
+    margin: 10px;
+}
+
+.tooltip {
+    display: none;
+    padding: 5px;
+    font-size: 0;
+    background: #eee;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+}
+
+.button {
+    margin-top: 20px;
+}
