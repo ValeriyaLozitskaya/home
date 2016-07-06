@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.row-fluid {
+    width: 960px;
+    margin: 0 auto;
+}
+
+header {
+    text-align: center;
+}
+
+main {
+    margin: 20px 20% 0px 20%;
+}
+
+.textbox {
+    position: relative;
+    margin-left: 10px;
+}
+
+.button--config {
+    text-align: center;
+}
+#myModalLabel {
+	text-align: center;
+}
+.error,
+.correct,
+.score {
+	width: 100%;
+	padding: 5px 15px;
+	border-radius: 7px;
+}
+
+.score {
+	margin: 15px 0;
+	text-align: center;
+}

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Java Script Home Work 3-4</title>
+        <link rel="stylesheet" href="css/style.css">
+        <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+		<script src="http://code.jquery.com/jquery-2.2.3.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/tmpl.js"></script>
+        <script src="js/script.js"></script>
+    </head>
+    <body>
+        <script type="text/html" id='test'>
+            <div class="row-fluid">
+                <div class="span12">
+                    <header>
+                        <h3>Тест по программированию</h3>
+                    </header>
+                    <main>
+                        <form name="test">
+                            <ol>
+                                <li>
+                                    <h5><%= questions[0].text %></h5>
+                                    <p>
+                                        <input id="1" type="radio" name="answerfirst" value="0" onclick="Engine(0, this.value)">
+                                        <label for="1" class="textbox"><%= questions[0].answers[0] %></label>
+                                    </p>
+									<p>
+                                        <input id="2" type="radio" name="answerfirst" value="1" onclick="Engine(0, this.value)">
+                                        <label for="2" class="textbox"><%= questions[0].answers[1] %></label>
+                                    </p>
+									<p>
+                                        <input id="3" type="radio" name="answerfirst" value="2" onclick="Engine(0, this.value)">
+                                        <label for="3" class="textbox"><%= questions[0].answers[2] %></label>
+                                    </p>
+                                </li>
+								                                <li>
+                                    <h5><%= questions[1].text %></h5>
+                                    <p>
+                                        <input id="4" type="radio" name="answersecond" value="0" onclick="Engine(1, this.value)">
+                                        <label for="4" class="textbox"><%= questions[1].answers[0] %></label>
+                                    </p>
+									<p>
+                                        <input id="5" type="radio" name="answersecond" value="1" onclick="Engine(1, this.value)">
+                                        <label for="5" class="textbox"><%= questions[1].answers[1] %></label>
+                                    </p>
+									<p>
+                                        <input id="6" type="radio" name="answersecond" value="2" onclick="Engine(1, this.value)">
+                                        <label for="6" class="textbox"><%= questions[1].answers[2] %></label>
+                                    </p>
+                                </li>
+								                                <li>
+                                    <h5><%= questions[2].text %></h5>
+                                    <p>
+                                        <input id="7" type="radio" name="answerthird" value="0" onclick="Engine(2, this.value)">
+                                        <label for="7" class="textbox"><%= questions[2].answers[0] %></label>
+                                    </p>
+									<p>
+                                        <input id="8" type="radio" name="answerthird" value="1" onclick="Engine(2, this.value)">
+                                        <label for="8" class="textbox"><%= questions[2].answers[1] %></label>
+                                    </p>
+									<p>
+                                        <input id="9" type="radio" name="answerthird" value="2" onclick="Engine(2, this.value)">
+                                        <label for="9" class="textbox"><%= questions[2].answers[2] %></label>
+                                    </p>
+                                </li>
+                            </ol>
+                            <div class="button--config">
+                                <button class="btn" type="button" onClick="Score()" data-toggle="modal" data-target="#myModal">Проверить мои результаты</button>
+                            </div>
+                            <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-body" id="answer"></div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                            <button type="reset" class="btn btn-primary clear">Clear</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </main>
+                </div>
+            </div>
+        </script>
+    </body>
+</html>
