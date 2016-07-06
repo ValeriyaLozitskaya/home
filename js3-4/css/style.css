@@ -1,0 +1,32 @@
+@font-face {
+ font-family: Glyphicons;
+ src: url(fonts/glyphicons-halflings-regular.woff);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.row-fluid {
+    width: 960px;
+    margin: 0 auto;
+    font-family: 'Glyphicons';
+}
+
+header {
+    text-align: center;
+}
+
+main {
+    margin: 20px 20% 0px 20%;
+}
+
+.textbox {
+    position: relative;
+    margin-left: 10px;
+}
+
+.button--config {
+    text-align: center;
+}
