@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home Work JS 11-12</title>
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+<section class="carousel clearfix">
+    <button class="carousel-arrow-left">Назад</button>
+    <div class="carousel-hider">
+        <ul class="carousel-list">
+            <li class="carousel-element"><img src="img/1.jpg" alt="Alt">
+                <p>Картинка 1</p>
+            </li>
+            <li class="carousel-element"><img src="img/2.jpg" alt="Alt">
+                <p>Картинка 2</p>
+            </li>
+            <li class="carousel-element"><img src="img/3.jpg" alt="Alt">
+                <p>Картинка 3</p>
+            </li>
+            <li class="carousel-element"><img src="img/5.jpg" alt="Alt">
+                <p>Картинка 5</p>
+            </li>
+            <li class="carousel-element"><img src="img/6.jpg" alt="Alt">
+                <p>Картинка 6</p>
+            </li>
+        </ul>
+    </div>
+    <button class="carousel-arrow-right">Вперед</button>
+</section>
+
+
+<section class="template">
+    <script type="text/template" id="profile">
+        <div class="list">
+            <div class="photo">
+                <h2><%= name %></h2>
+                <img src="<%= photo.src %>" width="132px" alt="<%= photo.alt %>">
+            </div>
+            <div class="block">
+                <p><%= job %></p>
+                <div class="line"></div>
+                <p><%= why %></p>
+                <ul>
+                    <% for (var i = 0; i < reasons.length; i++) { %>
+                    <li><%= reasons[i] %></li>
+                    <% } %>
+                </ul>
+                <div class="line"></div>
+                <p><%= tel %> <br>
+                    <%= number %></p>
+                <p><%= fb %><br>
+                    <a href="<%= fb_link %>"><%= fb_link %></a>
+                </p>
+                <div class="line"></div>
+                <p><%= feedback %><br>
+                    <%= feedback_text %></p>
+            </div>
+        </div>
+    </script>
+</section>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+<script src="js/jquery.myCarousel.js"></script>
+<script src="js/tmpl.js"></script>
+<script src="js/script.js"></script>
+
+
+</body>
+</html>
