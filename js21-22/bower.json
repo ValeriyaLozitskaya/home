@@ -1,0 +1,20 @@
+{
+    "name": "jshw21-22",
+    "version": "0.0.0",
+    "authors": [
+        "Puvvl <vasylputra@hotmail.com>"
+    ],
+    "license": "ISC",
+    "ignore": [
+        "**/.*",
+        "node_modules",
+        "bower_components",
+        "test",
+        "tests"
+    ],
+    "dependencies": {
+        "normalize.css": "*",
+        "jquery": "2.*",
+        "bootstrap": "*"
+    }
+}
