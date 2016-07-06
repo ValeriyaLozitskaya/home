@@ -1,0 +1,325 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.wrapper {
+    margin: 0 auto;
+    width: 960px;
+}
+.grid {
+    margin: 0 auto;
+    width: 960px;
+}
+/** Carousel **/
+.carousel {
+    position: relative;
+    overflow: hidden;
+}
+.carousel ul {
+    width: 20000em;
+    position: relative;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.carousel li {
+    position: relative;
+    float: left;
+    width: 960px;
+    height: 640px;
+}
+.carousel img {
+    width: 100%;
+    height: 100%;
+}
+.carousel-header {
+    position: absolute;
+    width: 100%;
+    top: 420px;
+    color: rgb(255, 255, 255);
+    text-shadow: 0 0 1px rgba(0, 0, 0, 0.85);
+    font-size: 36px;
+    text-align: center;
+}
+/** Carousel Controls **/
+.prev,
+.next {
+    width: 80px;
+    height: 100%;
+    top: 0;
+    position: absolute;
+    text-align: center;
+    color: #000;
+    text-decoration: none;
+    font: 100px/600px Arial, sans-serif;
+}
+
+.prev {
+    left: 0px;
+}
+.next {
+    right: 0px;
+}
+.prev:hover,
+.next:hover {
+    color: #fff;
+    background: rgba(153, 153, 153, 0.51);
+}
+/***************************************MODAL FORM****************************************/
+.subscription {
+    display: inline-block;
+    background: rgba(207, 0, 0, 0.95);
+    float: right;
+}
+.subscription:hover,
+.subscription:focus,
+.subscription:active {
+    color: #fff;
+    background: rgba(254, 13, 13, 0.95);
+    transition: 1s;
+}
+.modal_form {
+	border-radius: 5px;
+	border: 3px #000 solid;
+	background: #fff;
+	position: fixed;
+	top: 45%;
+	margin-top: -150px;
+	display: none;
+	opacity: 0;
+	z-index: 5;
+	padding: 20px 10px;
+}
+.modal_form .modal_close {
+    width: 25px;
+    height: 20px;
+    position: relative;
+    cursor: pointer;
+    display: block;
+    margin-left: 900px;
+    text-align: center;
+}
+.overlay {
+	z-index: 3;
+	position: fixed;
+	background-color: #000;
+	opacity: 0.7;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	cursor: pointer;
+	display: none;
+}
+/***************************************SELECT****************************************/
+#join {
+    width: 100%;
+    text-align: center;
+}
+.join-header {
+    padding: 10px;
+    color: rgb(0, 0, 0);
+    text-shadow: 0 0 1px rgba(0, 0, 0, 0.85);
+    font-size: 24px;
+    display: block;
+    text-align: center;
+}
+span.customSelect,
+.hasCustomSelect {
+    font: 16px sans-serif;
+    background: #fff url('../img/drop.png') right center no-repeat;
+    border: 1px solid #DEF;
+    color: #000;
+    padding: 15px 10px;
+    border-radius: 5px 5px;
+    width: 250px;
+    margin: 10px 10px 10px 0;
+}
+.customSelect.customSelectHover {
+    border-color: #c7c7c7;
+    background-color: #f5f5f5;
+}
+.customSelect.customSelectFocus {
+    border-color: Orange;
+}
+.customSelect.customSelectOpen {
+    border-color: OliveDrab;
+}
+.customSelect.customSelectChanged {
+	-webkit-animation: changed 1s;
+	-moz-animation: changed 1s;
+	-ms-animation: changed 1s;
+	animation: changed 1s;
+}
+@-webkit-keyframes changed {
+	0%, 100%{
+		-webkit-box-shadow: 0px 0px 14px 5px rgba(151, 67, 159, 0);
+		box-shadow: 0px 0px 14px 5px rgba(151, 67, 159, 0);
+	}
+	50%{
+		-webkit-box-shadow: 0px 0px 14px 5px rgba(151, 67, 159, 0.5);
+		box-shadow: 0px 0px 14px 5px rgba(151, 67, 159, 0.5);
+	}
+}
+@-moz-keyframes changed {
+	0%, 100%{
+		-moz-box-shadow: 0px 0px 14px 5px rgba(151, 67, 159, 0);
+		box-shadow: 0px 0px 14px 5px rgba(151, 67, 159, 0);
+	}
+	50%{
+		-moz-box-shadow: 0px 0px 14px 5px rgba(151, 67, 159, 0.5);
+		box-shadow: 0px 0px 14px 5px rgba(151, 67, 159, 0.5);
+	}
+}
+@keyframes changed {
+	0%, 100%{
+		box-shadow:0px 0px 14px 5px rgba(151, 67, 159, 0);
+	}
+	50% {
+		box-shadow:0px 0px 14px 5px rgba(151, 67, 159, 0.5);
+	}
+}
+@-ms-keyframes changed {
+	0%, 100%{
+		-ms-box-shadow:0px 0px 14px 5px rgba(151, 67, 159, 0);
+		box-shadow:0px 0px 14px 5px rgba(151, 67, 159, 0);
+	}
+	50% {
+		-ms-box-shadow: 0px 0px 14px 5px rgba(151, 67, 159, 0);
+		box-shadow: 0px 0px 14px 5px rgba(151, 67, 159, 0.5);
+	}
+}
+/***************************************CHECKBOX****************************************/
+.sex {
+    width: 17px;
+    height: 17px;
+    display: inline-block;
+    cursor: pointer;
+    background: url('../img/checkbox-sprite.png');
+}
+.sex input {
+    display: none;
+}
+label {
+    font-size: 24px;
+    margin: 10px;
+}
+.email {
+    padding: 10px;
+}
+#licence {
+	position: absolute;
+	clip: rect(0, 0, 0, 0);
+}
+.licence-text {
+	cursor: pointer;
+}
+.licence-text:before {
+	content: ' ';
+	display: inline-block;
+	width: 17px;
+	height: 17px;
+	background: url('../img/checkbox-sprite.png');
+	position: relative;
+	top: 3px;
+	margin-right: 15px;
+}
+#licence:checked + .licence-text:before {
+background-position: 0 -17px;
+}
+.licence-text:hover:before {
+background-position: 0 0px;
+}
+#licence:checked + .licence-text:hover:before {
+background-position: 0 -17px;
+}
+.licence-text a {
+    text-decoration: none;
+    color: #DC0707;
+}
+.button {
+    padding: 10px;
+}
+.button button[type='submit'] {
+    font-size: 24px;
+    border: none;
+    padding: 10px 50px;
+    border-radius: 5px;
+    color: white;
+    background: #DC0707;
+}
+/***************************************NAVIGATION****************************************/
+nav {
+    background-color: rgb(0, 0, 0);
+    position: relative;
+    z-index: 1;
+    width: 100%;
+}
+nav ul {
+    list-style-type: none;
+    display: inline-block;
+}
+nav ul li {
+    display: inline-block;
+    position: relative;
+}
+nav li ul {
+    background-color: rgb(0, 0, 0);
+    position: absolute;
+    left: 0;
+    width: 200px;
+}
+nav li li {
+    position: relative;
+    margin: 0;
+    display: block;
+}
+nav li li ul {
+    position: absolute;
+    top: 0;
+    left: 200px;
+    margin: 0;
+}
+nav a {
+    line-height: 40px;
+    padding: 0 12px;
+    margin: 0 12px;
+}
+nav a {
+    color:#fff;
+    text-decoration: none;
+    display: block;
+}
+
+nav a:hover,
+nav a:focus,
+nav a:active {
+    color: rgb(106, 131, 218);
+    transition: 1s;
+}
+nav li li a {
+    border-bottom: solid 1px #fff;
+    margin: 0 10px;
+    padding: 0;
+}
+nav li li a:hover,
+nav li li a:focus,
+nav li li a:active {
+    border-bottom: solid 1px rgb(106, 131, 218);
+}
+nav li li:last-child a {
+    border-bottom: none;
+}
+nav li.dropdown > a {
+    background-image: url('../img/arrow-down.png');
+    background-position: right 20px;
+    background-repeat: no-repeat;
+}
+nav li li.dropdown > a {
+    background-image: url('../img/arrow-right.png');
+    background-position: right 16px;
+    background-repeat: no-repeat;
+}
+ul.sub-menu {
+    display: none;
+}
