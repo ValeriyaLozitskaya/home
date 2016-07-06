@@ -1,0 +1,58 @@
+@mixin font-face($style-name, $file, $family, $category:"") {
+    $filepath: "../fonts/" + $family + "/" + $file;
+    @font-face {
+        font-family: "#{$style-name}";
+        src: url($filepath + ".otf")  format('truetype');
+        src: url($filepath + ".woff") format('woff'), url($filepath + ".woff2") format('woff2');
+    }
+    %#{$style-name} {
+        font: {
+            @if $category != "" {
+                family: "#{$style-name}", #{$category};
+            }
+            @else {
+                family: "#{$style-name}";
+                weight: normal;
+            }
+        }
+    }
+}
+@include font-face('skrawk-serif', 'skrawk-serif-webfont', 'skrawk-serif', 'serif');
+$blue: #3bbfce; $red: rgb(149, 25, 25); $margin: 16px; $fontSize: 14px;
+body {
+    box-sizing: border-box;
+	color: darken($blue, 20%);
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    font-family: 'skrawk-serif', serif;
+}
+@mixin grid($radius) {
+    -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+    -ms-border-radius: $radius;
+    border-radius: $radius;
+    padding: 0 $margin / 2;
+    margin: $margin / 2;
+    border: 1px solid $red;
+    p {
+        font-size: 24px;
+    }
+    img {
+        width: 60%;
+        -webkit-border-radius: $radius;
+        -moz-border-radius: $radius;
+        -ms-border-radius: $radius;
+        border-radius: $radius;
+        border: 2px solid $red;
+        &:hover {
+            border: 2px solid $blue;
+        }
+    }
+    &:hover {
+        border: 1px solid $blue;
+    }
+}
+.grid {
+    @include grid(10px);
+}
